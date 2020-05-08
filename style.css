@@ -1,0 +1,58 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.bg {
+  background-color: teal;
+}
+
+.blanco {
+  color: white;
+}
+
+.centro {
+  text-align: center;
+}
+
+.p-1 {
+  padding: 0.5em;
+}
+
+.p-2 {
+  padding: 1em;
+}
+
+@media (min-width: 0px){
+  .contenedor-principal {
+    padding: 2em 0.5em;
+  }
+}
+
+@media (min-width: 768px){
+  .contenedor-principal {
+    padding: 2em 20vw;
+  }
+}
+
+.tarea {
+  padding: 0.5em 0em;
+  width: 100%;
+  border-top: 1px solid lightgray;
+}
+
+.titulo {
+  font-weight: bold;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.cat {
+  float: right;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.descripcion {
+  padding: 0.5em 0em;
+  font-size: 16px;
+}
