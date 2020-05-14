@@ -1,4 +1,7 @@
 <?php
+
+require_once('../Models/Response.php');
+
 $servername = "localhost";
 $database = "lista_tareas";
 $port = "80";
@@ -24,7 +27,15 @@ while($row = $query->fetch(PDO::FETCH_ASSOC)) {
   $categorias[] = $row;
 }
 
-$res = json_encode($categorias);
-echo $res;
+$response = new Response();
+$response->setHttpCode(200);
+$response->setSuccess(true);
+$response->setData($categorias);
+
+$response->send();
+
+//$res = json_encode($categorias);
+//echo $res;
+exit();
 
 ?>
